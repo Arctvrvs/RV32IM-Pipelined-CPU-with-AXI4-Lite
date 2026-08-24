@@ -14,6 +14,8 @@ directed workload characterization, model-to-RTL retirement-trace correlation,
 Dhrystone analysis, SRAM design-space exploration, Cadence Genus synthesis, and
 Innovus physical implementation studies.
 
+---
+
 The final design is a five-stage in-order RV32IM pipeline with a split AXI4-Lite cache hierarchy:
 
 ```text
