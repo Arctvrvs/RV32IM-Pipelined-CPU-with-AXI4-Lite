@@ -2,6 +2,18 @@
 
 This repository contains a final bare-metal RV32IM CPU project implemented in Verilog/SystemVerilog and set up for Synopsys VCS and Verdi.
 
+## Related performance modeling project
+
+Architectural performance modeling and implementation analysis for this processor
+are maintained in a separate companion repository:
+
+**[RV32IM SoC Performance Modeling & RTL Correlation Framework](https://github.com/Arctvrvs/RV32IM-SoC-Performance)**
+
+That project extends the RTL work with cycle-aware pipeline and cache modeling,
+directed workload characterization, model-to-RTL retirement-trace correlation,
+Dhrystone analysis, SRAM design-space exploration, Cadence Genus synthesis, and
+Innovus physical implementation studies.
+
 The final design is a five-stage in-order RV32IM pipeline with a split AXI4-Lite cache hierarchy:
 
 ```text
