@@ -1,0 +1,81 @@
+0000: 07b00013    addi x0,x0,123
+0004: 00500093    addi x1,x0,5
+0008: 00700113    addi x2,x0,7
+000c: 002081b3    add x3,x1,x2
+0010: 40110233    sub x4,x2,x1
+0014: ff800293    addi x5,x0,-8
+0018: 00200313    addi x6,x0,2
+001c: 4062d333    sra x6,x5,x6
+0020: 00200393    addi x7,x0,2
+0024: 0072d3b3    srl x7,x5,x7
+0028: 0012a433    slt x8,x5,x1
+002c: 0012b4b3    sltu x9,x5,x1
+0030: fff2a513    slti x10,x5,-1
+0034: 00a0b593    sltiu x11,x1,10
+0038: 0030c613    xori x12,x1,3
+003c: 0100e693    ori x13,x1,16
+0040: 00f6f713    andi x14,x13,15
+0044: 00309793    slli x15,x1,3
+0048: 0027d813    srli x16,x15,2
+004c: 4012d893    srai x17,x5,1
+0050: 12345937    lui x18,0x12345
+0054: 00000997    auipc x19,0x0
+0058: 04000a13    addi x20,x0,64
+005c: 0aa00a93    addi x21,x0,170
+0060: 015a0023    sb x21,0(x20)
+0064: 0bb00a93    addi x21,x0,187
+0068: 015a00a3    sb x21,1(x20)
+006c: 0cc00a93    addi x21,x0,204
+0070: 015a0123    sb x21,2(x20)
+0074: 0dd00a93    addi x21,x0,221
+0078: 015a01a3    sb x21,3(x20)
+007c: 000a2b03    lw x22,0(x20)
+0080: 000a0b83    lb x23,0(x20)
+0084: 000a4c03    lbu x24,0(x20)
+0088: 000a1c83    lh x25,0(x20)
+008c: 002a5d03    lhu x26,2(x20)
+0090: fff00d93    addi x27,x0,-1
+0094: 01ba2223    sw x27,4(x20)
+0098: 004a2e03    lw x28,4(x20)
+009c: 82300a93    addi x21,x0,-2013
+00a0: 015a1423    sh x21,8(x20)
+00a4: 45600a93    addi x21,x0,1110
+00a8: 015a1523    sh x21,10(x20)
+00ac: 00000f93    addi x31,x0,0
+00b0: 00108463    beq x1,x1,beq_taken  # off 8
+00b4: ff500f93    addi x31,x0,-11
+00b8: 001f8f93    addi x31,x31,1
+00bc: 00209463    bne x1,x2,bne_taken  # off 8
+00c0: ff400f93    addi x31,x0,-12
+00c4: 002f8f93    addi x31,x31,2
+00c8: 0012c463    blt x5,x1,blt_taken  # off 8
+00cc: ff300f93    addi x31,x0,-13
+00d0: 004f8f93    addi x31,x31,4
+00d4: 0050d463    bge x1,x5,bge_taken  # off 8
+00d8: ff200f93    addi x31,x0,-14
+00dc: 008f8f93    addi x31,x31,8
+00e0: 0050e463    bltu x1,x5,bltu_taken  # off 8
+00e4: ff100f93    addi x31,x0,-15
+00e8: 010f8f93    addi x31,x31,16
+00ec: 0012f463    bgeu x5,x1,bgeu_taken  # off 8
+00f0: ff000f93    addi x31,x0,-16
+00f4: 020f8f93    addi x31,x31,32
+00f8: 00208663    beq x1,x2,bad_not_taken  # off 12
+00fc: 040f8f93    addi x31,x31,64
+0100: 0080006f    jal x0,after_bad_not_taken  # off 8
+0104: fef00f93    addi x31,x0,-17
+0108: 00800f6f    jal x30,jal_target  # off 8
+010c: fee00f93    addi x31,x0,-18
+0110: 080f8f93    addi x31,x31,128
+0114: 12000e93    addi x29,x0,jalr_target  # addr 288
+0118: 000e8f67    jalr x30,0(x29)
+011c: fed00f93    addi x31,x0,-19
+0120: 100f8f93    addi x31,x31,256
+0124: 00000013    addi x0,x0,0
+0128: 00000013    addi x0,x0,0
+012c: 00000013    addi x0,x0,0
+0130: 00000013    addi x0,x0,0
+0134: 00000013    addi x0,x0,0
+0138: 00000013    addi x0,x0,0
+013c: 00000013    addi x0,x0,0
+0140: 00000013    addi x0,x0,0

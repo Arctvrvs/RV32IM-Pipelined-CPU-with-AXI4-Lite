@@ -1,0 +1,4 @@
+rv32ui-p-lh: ELF entry 0x80000000; simulation maps 0x80000000 -> 0x00000000
+IMEM .text.init         elf=0x80000000 sim=0x00000000 size=0x384 flags=0x6 type=1
+DMEM .tohost            elf=0x80001000 sim=0x00001000 size=0x48 flags=0x3 type=1
+DMEM .data              elf=0x80002000 sim=0x00002000 size=0x10 flags=0x3 type=1

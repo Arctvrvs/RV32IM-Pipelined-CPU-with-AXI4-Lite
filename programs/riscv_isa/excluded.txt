@@ -1,0 +1,5 @@
+rv32ui-p-fence_i
+rv32ui-p-ma_data
+
+Excluded because this core has no instruction-cache invalidation/self-modifying-code
+synchronization path and no misaligned-access support or trap model.

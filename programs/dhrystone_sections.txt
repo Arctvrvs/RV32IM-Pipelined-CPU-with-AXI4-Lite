@@ -1,0 +1,12 @@
+Dhrystone ELF memory map generated from riscv-tests/benchmarks/dhrystone.riscv
+ELF entry: 0x80000000; simulation maps 0x80000000 -> 0x00000000
+
+.text.init       elf=0x80000000 sim=0x00000000 size=0x1dc type=1
+.tohost          elf=0x80001000 sim=0x00001000 size=0x48 type=1
+.text            elf=0x80002000 sim=0x00002000 size=0x1b64 type=1
+.text.startup    elf=0x80003b64 sim=0x00003b64 size=0x5a4 type=1
+.rodata.str1.4   elf=0x80004108 sim=0x00004108 size=0x1b8 type=1
+.rodata          elf=0x800042c0 sim=0x000042c0 size=0x258 type=1
+.sbss            elf=0x80004568 sim=0x00004568 size=0x30 type=8
+.bss             elf=0x80004598 sim=0x00004598 size=0x27d8 type=8
+.tbss            elf=0x80006d80 sim=0x00006d80 size=0x44 type=8

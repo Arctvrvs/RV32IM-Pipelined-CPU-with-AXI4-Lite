@@ -1,0 +1,39 @@
+# Simulator build output
+build/
+csrc/
+simv
+simv.*
+*.daidir/
+ucli.key
+inter.vpd
+DVEfiles/
+
+# Waveforms and simulator/debug logs
+*.vcd
+*.vpd
+*.fst
+*.fsdb
+*.log
+novas.*
+verdiLog/
+
+# Local scratch and audit output
+/tmp/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Patch backup/reject files
+*.orig
+*.rej
+
+# Local simulator override files
+synopsys_sim.setup
+vc_hdrs.h

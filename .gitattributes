@@ -1,0 +1,19 @@
+* text=auto
+
+# Keep source and build scripts portable across Windows and Unix hosts.
+*.v       text eol=lf
+*.sv      text eol=lf
+*.f       text eol=lf
+*.sh      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+Makefile  text eol=lf
+*.md      text eol=lf
+*.txt     text eol=lf
+*.hex     text eol=lf
+*.lst     text eol=lf
+*.dump    text eol=lf
+
+# Documentation assets are binary.
+*.png binary
+*.pdf binary

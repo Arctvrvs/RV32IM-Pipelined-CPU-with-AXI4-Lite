@@ -1,0 +1,26 @@
+0000: 00700093    addi x1, x0, 7
+0004: 00300113    addi x2, x0, 3
+0008: 022081b3    mul x3, x1, x2        # 21
+000c: 0220c233    div x4, x1, x2        # 2
+0010: 0220e2b3    rem x5, x1, x2        # 1
+0014: 0220d333    divu x6, x1, x2       # 2
+0018: 0220f3b3    remu x7, x1, x2       # 1
+001c: ff900413    addi x8, x0, -7
+0020: 022404b3    mul x9, x8, x2        # -21 low
+0024: 02244533    div x10, x8, x2       # -2
+0028: 022465b3    rem x11, x8, x2       # -1
+002c: fff00613    addi x12, x0, -1
+0030: 00200693    addi x13, x0, 2
+0034: 02d61733    mulh x14, x12, x13    # high signed(-1*2)
+0038: 02d627b3    mulhsu x15, x12, x13  # high signed*unsigned
+003c: 02d63833    mulhu x16, x12, x13   # high unsigned
+0040: 0200c8b3    div x17, x1, x0       # divide by zero -> -1
+0044: 0200d933    divu x18, x1, x0      # divide by zero -> all ones
+0048: 0200e9b3    rem x19, x1, x0       # divide by zero -> dividend
+004c: 0200fa33    remu x20, x1, x0      # divide by zero -> dividend
+0050: 80000ab7    lui x21, 0x80000      # 0x80000000
+0054: 02cacb33    div x22, x21, x12     # overflow -> 0x80000000
+0058: 02caebb3    rem x23, x21, x12     # overflow -> 0
+005c: 0000000f    fence                  # NOP in this core
+0060: 07b00c13    addi x24, x0, 123      # proves FENCE did not halt
+0064: 00000073    ecall                  # asserts halt
